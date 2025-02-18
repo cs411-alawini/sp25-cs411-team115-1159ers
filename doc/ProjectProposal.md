@@ -38,17 +38,17 @@ Dataset websites:
 
 ## Functionality
 
-The images at the end of the document show what three of the pages would look like. The main page would have checkboxes on the left that would be able to customize the types of trivia that will be done. This includes difficulty and NFL or NCAA. Each question would have multiple pieces of information attached to it including these customizations, so that trivia questions can be selected. They can choose what they would like to do, including searching for other people’s trivia questions. They can search on the top right which takes them to another page which more clearly can show different people’s trivia questions that have been uploaded. They can also create a new trivia question or go to their profile and delete trivia questions they made but don’t want to use anymore. They are able to edit their trivia questions they already created as well if they want to. People can also search other users to see their personal best scores as well as a leaderboard that shows the highest scores.
+The images below show what three of the pages would look like. The main page would have checkboxes on the left that would be able to customize the types of trivia that will be done. This includes difficulty and NFL or NCAA. Each question would have multiple pieces of information attached to it including these customizations, so that trivia questions can be selected. They can choose what they would like to do, including searching for other people’s trivia questions. They can search on the top right which takes them to another page which more clearly can show different people’s trivia questions that have been uploaded. They can also create a new trivia question or go to their profile and delete trivia questions they made but don’t want to use anymore. They are able to edit their trivia questions they already created as well if they want to. People can also search other users to see their personal best scores as well as a leaderboard that shows the highest scores.
 
-## Project Work Distribution
-
-Ryan: Frontend (streamlit), API Routes, Database hosting design
-Shiyuan: Frontend, API Routes, Database hosting, web hosting, CI/CD building, visual design
-Zihao: Backend
-Kiernan: Backend
-
-## UI Mockup
+### UI Mockup
 
 ![Mockup 1](static/ui1.png)
 ![Mockup 2](static/ui2.png)
 ![Mockup 3](static/ui3.png)
+
+## Project Work Distribution
+
+- Ryan: Web frontend implementation
+- Kiernan: API endpoints and routing
+- Zihao: Database schema design and query writing
+- Shiyuan: Cloud infrastructure design and hosting
