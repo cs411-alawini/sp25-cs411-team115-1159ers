@@ -1,0 +1,1 @@
+In the functionality section of the project proposal in the updated document there is an extra paragraph that explains the CRUD operations. This addresses the comment that says that the CRUD operations are not specified clearly enough. There are no other changes to the file. 
