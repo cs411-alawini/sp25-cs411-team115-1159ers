@@ -1,0 +1,1 @@
+The new updated conceptual design fixes the issue that we had for the combination of the ER and UML notation. The updated design now is in the proper UML format. We also fixed the relationships between different values so that the User and UserHighScore tables make sense.
