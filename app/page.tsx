@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { useEffect, useState, FormEvent } from "react";
+import { useState, FormEvent } from "react";
 import { TextField } from "@/components/ui/textfield";
 import { User } from "@/lib/models";
 
@@ -30,8 +29,12 @@ export default function Home() {
 
       setUsername("");
       setEmail("");
-    } catch (err) {
-      setError("Failed to submit form. Please try again.");
+    } catch (error) {
+      setError(
+        `Failed to submit form: ${
+          error instanceof Error ? error.message : "Unknown error"
+        }`
+      );
     }
   };
 
@@ -41,8 +44,12 @@ export default function Home() {
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();
       setUsers(data);
-    } catch (err) {
-      setError("Failed to fetch users");
+    } catch (error) {
+      setError(
+        `Failed to fetch users: ${
+          error instanceof Error ? error.message : "Unknown error"
+        }`
+      );
     }
   };
 
