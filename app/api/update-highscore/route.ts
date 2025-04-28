@@ -30,7 +30,7 @@ export async function POST(request: Request) {
         `
         CALL UpdateUserHighScore(?, ?, ?, ?)
       `,
-        [userId, category === "CFB" ? 1 : 5, "Standard", score]
+        [userId, category === "NFL" ? 1 : 2, "Standard", score]
       );
 
       // Check if the procedure returned any error messages
