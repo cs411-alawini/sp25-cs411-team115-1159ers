@@ -2,9 +2,9 @@
 
 import { useSearchParams } from "next/navigation";
 import TriviaGame from "@/components/TriviaGame";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 
-export default function TriviaPage() {
+function TriviaContent() {
   const searchParams = useSearchParams();
   const category = searchParams.get("category");
   const [showGameOver, setShowGameOver] = useState(false);
@@ -55,5 +55,13 @@ export default function TriviaPage() {
       onGameEnd={handleGameEnd}
       onScoreUpdate={setScore}
     />
+  );
+}
+
+export default function TriviaPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <TriviaContent />
+    </Suspense>
   );
 }
