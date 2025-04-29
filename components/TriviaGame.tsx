@@ -68,7 +68,13 @@ export default function TriviaGame({
     setSelectedAnswer(selectedAnswer);
     const isCorrect = selectedAnswer === currentQuestion.CorrectAnswer;
     if (isCorrect) {
-      const newScore = score + 100;
+      const difficultyMultiplier =
+        currentQuestion.Difficulty === 1
+          ? 1
+          : currentQuestion.Difficulty === 2
+          ? 2
+          : 3;
+      const newScore = score + 100 * difficultyMultiplier;
       setScore(newScore);
       onScoreUpdate(newScore);
     }
